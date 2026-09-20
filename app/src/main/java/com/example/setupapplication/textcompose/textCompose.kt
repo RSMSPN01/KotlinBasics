@@ -1,5 +1,4 @@
 package com.example.setupapplication.textcompose
-
 //import android.graphics.Color
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
