@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.sp
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-private fun CardsExample() {
+fun CardsExample() {
     Column(
         modifier = Modifier
             .fillMaxSize()
