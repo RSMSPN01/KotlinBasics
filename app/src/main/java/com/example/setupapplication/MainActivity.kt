@@ -4,17 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.setupapplication.textcompose.AlertDialogExample
 import com.example.setupapplication.textcompose.Scaffold.ScaffoldExample
-import com.example.setupapplication.textcompose.navigation.NavGraph
-import com.example.setupapplication.textcompose.rememberExample
+import com.example.setupapplication.textcompose.navigationbar.NavBarGraph
 import com.example.setupapplication.ui.theme.SetupApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +15,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             SetupApplicationTheme {
 //                NavGraph()
-                ScaffoldExample()
+//                ScaffoldExample()
+                NavBarGraph()
             }
         }
     }
