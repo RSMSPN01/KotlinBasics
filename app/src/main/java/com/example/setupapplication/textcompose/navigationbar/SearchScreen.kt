@@ -14,7 +14,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
@@ -23,7 +22,7 @@ import androidx.navigation.NavHostController
 @Composable
 fun SearchScreenUI(navController: NavHostController) {
     Scaffold(
-        bottomBar = {NavBarUI(navController) }
+        bottomBar = {NavBarUI(navController, "Search") }
     ) { innerpadding ->
         var name by rememberSaveable { mutableStateOf("") }
         Column(

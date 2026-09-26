@@ -16,7 +16,7 @@ import androidx.navigation.NavHostController
 
 //@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun NavBarUI(navController: NavHostController) {
+fun NavBarUI(navController: NavHostController, page: String) {
     var items = listOf(
         NavItems("Home", Icons.Default.Home, NavBarRoutes.Home),
         NavItems("Search", Icons.Default.Search, NavBarRoutes.Search),
@@ -27,7 +27,7 @@ fun NavBarUI(navController: NavHostController) {
         items.forEach { item ->
 
             NavigationBarItem(
-                selected = true,
+                selected = page == item.title,
                 onClick = {
                     navController.navigate(item.routes) {
                         popUpTo(navController.graph.startDestinationId) { // clear the memory

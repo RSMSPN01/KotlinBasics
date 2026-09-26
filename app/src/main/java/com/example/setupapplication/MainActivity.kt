@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.setupapplication.textcompose.Scaffold.ScaffoldExample
+import com.example.setupapplication.textcompose.ToastExample
 import com.example.setupapplication.textcompose.navigationbar.NavBarGraph
 import com.example.setupapplication.ui.theme.SetupApplicationTheme
 
@@ -16,8 +17,9 @@ class MainActivity : ComponentActivity() {
             SetupApplicationTheme {
 //                NavGraph()
 //                ScaffoldExample()
-                NavBarGraph()
+//                NavBarGraph()
             }
+            ToastExample()
         }
     }
 }

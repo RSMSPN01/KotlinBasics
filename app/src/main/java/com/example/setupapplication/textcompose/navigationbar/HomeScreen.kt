@@ -25,7 +25,7 @@ import androidx.navigation.NavHostController
 @Composable
 fun HomeScreenUI(navController: NavHostController) {
     Scaffold(
-        bottomBar = {NavBarUI(navController)}
+        bottomBar = {NavBarUI(navController,"Home")}
     ) { innerpadding ->
         var name by rememberSaveable { mutableStateOf("") }
         Column(
