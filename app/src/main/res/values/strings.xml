@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SetupApplication</string>
+    <string name="title_activity_splach_screen">SplachScreen</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>

@@ -17,22 +17,32 @@
             android:launchMode="singleTop"
             android:theme="@style/Theme.SetupApplication"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <!--            intent filter for receiving the plain text data -->
+            <!-- intent filter for receiving the plain text data -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="text/plain" />
             </intent-filter>
+
         </activity>
-        <!--        letting know the app about the second activity-->
+
+        <!-- letting know the app about the second activity -->
         <activity
             android:name=".androidcore.intent.SecondActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
+
+        <activity
+            android:name=".androidcore.splashscreen.SplashScreen"
+            android:exported="true"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/Theme.SetupApplication"
+            android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
