@@ -1,14 +1,13 @@
 package com.example.setupapplication
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.setupapplication.androidcore.intent.MainActivityUi
 import com.example.setupapplication.androidcore.intent.MessageViewModel
+import com.example.setupapplication.androidcore.sharedpref.SharedPreferences
 import com.example.setupapplication.ui.theme.SetupApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +20,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SetupApplicationTheme {
-                MainActivityUi(viewModel)
+//                MainActivityUi(viewModel)
+                SharedPreferences(this@MainActivity)
             }
 
         }
