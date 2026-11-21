@@ -4,4 +4,6 @@ plugins {
     alias(libs.plugins.kotlin.compose) apply false
     // serialization plugin match this with your kotlin version too
     kotlin("plugin.serialization") version "2.2.10" apply false
+    // Firebase Google Services plugin
+    id("com.google.gms.google-services") version "4.6.0" apply false
 }

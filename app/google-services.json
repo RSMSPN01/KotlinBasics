@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1057495244147",
+    "project_id": "busbookinglearning",
+    "storage_bucket": "busbookinglearning.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057495244147:android:f25fd6df06e6da8be4b906",
+        "android_client_info": {
+          "package_name": "com.example.setupapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr8lZLg3nZrOuUQdts56_2mZBDF_bGdds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
