@@ -8,13 +8,16 @@ import androidx.activity.viewModels
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.setupapplication.StateFlow.DisplayStateUi
+import com.example.setupapplication.authentication.AuthScreen
+import com.example.setupapplication.authentication.AuthViewModel
 import com.example.setupapplication.corotuines.BusRoutesViewModel
 import com.example.setupapplication.ui.theme.SetupApplicationTheme
 
 class MainActivity : ComponentActivity() {
     //    private val viewModel: ScoreViewModel by viewModels()
 //    private val viewModel: MessageViewModel by viewModels()
-    private val viewModel: BusRoutesViewModel by viewModels()
+//    private val viewModel: BusRoutesViewModel by viewModels()
+    private val viewModel: AuthViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        installSplashScreen()
@@ -24,8 +27,8 @@ class MainActivity : ComponentActivity() {
             SetupApplicationTheme {
 //                MainActivityUi(viewModel)
 //                SharedPreferences(this@MainActivity)
-                DisplayStateUi(viewModel)
-
+//                DisplayStateUi(viewModel)
+                AuthScreen(viewModel)
             }
         }
     }

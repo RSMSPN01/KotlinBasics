@@ -65,7 +65,7 @@ dependencies {
     // Splash Screen
     implementation("androidx.core:core-splashscreen:1.0.0")
     // Firebase Bill of Materials
-    implementation(platform("com.google.firebase:firebase-bom:35.2.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
 
 // Firebase Authentication
     implementation("com.google.firebase:firebase-auth")
